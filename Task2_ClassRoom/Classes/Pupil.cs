@@ -14,38 +14,21 @@
 // from a child class to a parent class with overriding methods(functionality).
 class Pupil
 {   // Declare an public field.
-    public string name = string.Empty;
+    public string? name;
 
     // Declare a class constructor.
-    public Pupil()
-    {
+    public Pupil() { }
 
-    }
     // Declare a class constructor with an input parameter.
-    public Pupil(string name)
-    {
-        this.name = name;
-    }
+    public Pupil(string name) => this.name = name;
 
     // Define Virtual Methods to be able to change
     // the functionality of the methods in the inherited class.
-    public virtual void Study()
-    {
-        Console.WriteLine("Ну... я учу то, что задают");
-    }
+    public virtual void Study() => Console.WriteLine("Ну... я учу то, что задают");
 
-    public virtual void Read()
-    {
-        Console.WriteLine("Ну...читаю книжки всякие там");
-    }
+    public virtual void Read() => Console.WriteLine("Ну...читаю книжки всякие там");
 
-    public virtual void Write()
-    {
-        Console.WriteLine("Пишу? Нет. Я в лифте не пишу.");
-    }
-
-    public virtual void Relax()
-    {
-        Console.WriteLine("Я отдыхаю в спортзале");
-    }
+    public virtual void Write() => Console.WriteLine("Пишу? Нет. Я в лифте не пишу.");
+  
+    public virtual void Relax() => Console.WriteLine("Я отдыхаю в спортзале");
 }

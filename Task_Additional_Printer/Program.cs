@@ -2,7 +2,7 @@
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             #region Задание Дополнительное
             // Используя Visual Studio, создайте проект по шаблону Console Application. 
